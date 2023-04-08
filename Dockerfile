@@ -1,2 +1,3 @@
 FROM node:18.15.0
-WORKDIR /usr/src/app
+WORKDIR /frontend
+EXPOSE 3000

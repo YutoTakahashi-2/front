@@ -1,12 +1,11 @@
 version: '3.9'
 services:
-  react-app:
+  frontend:
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./:/usr/src/app
-    command: sh -c "cd react-ts-app && yarn start"
+      - ./frontend:/frontend
     ports:
       - "3000:3000"
     stdin_open: true 
